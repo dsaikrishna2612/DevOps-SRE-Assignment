@@ -18,7 +18,7 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install
 COPY scrape.js ./
-ENV SCRAPE_URL=https://hotstar.com
+ENV SCRAPE_URL=https://google.com
 RUN node scrape.js
 
 # -------- Stage 2: Server --------
